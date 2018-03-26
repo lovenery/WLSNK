@@ -1,5 +1,16 @@
 # WLSNK
 
+> Wireless Sensor Networks
+
+## Prerequisites
+
+- MQTT Broker
+- MultiConnect®mDot™ Developer Kit
+  - My Model: MTUDK2-ST-MDOT
+- Python 3
+
+## Build
+
 ```
 virtualenv venv
 . venv/bin/activate
@@ -18,4 +29,5 @@ pip install pyserial requests
 # after-7z/: always retry
 
 python m.py #main
+# Result will be in the testData/ directory.
 ```
