@@ -25,9 +25,9 @@ pip freeze > requirements.txt
 ```
 pip install pyserial requests
 
-# after-zip/: try one time
-# after-7z/: always retry
+# after-zip/: try one time (today, 2018/03/26)
+# after-7z/: always retry (next week, 2018/04/02)
 
 python m.py #main
-# Result will be in the testData/ directory.
+# Result will be in the testData/ directory. Make sure you already have this folder before running.
 ```
