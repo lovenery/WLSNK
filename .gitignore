@@ -103,3 +103,4 @@ ENV/
 # MINE
 .DS_Store
 testData/
+.vscode/
