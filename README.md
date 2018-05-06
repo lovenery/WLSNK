@@ -6,8 +6,10 @@
 
 - MQTT Broker
 - MultiConnect®mDot™ Developer Kit
-  - My Model: MTUDK2-ST-MDOT
+    - My Model: MTUDK2-ST-MDOT
 - Python 3
+    - requests
+    - matplotlib
 
 ## Build
 
