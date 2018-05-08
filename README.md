@@ -8,7 +8,9 @@
 - MultiConnect®mDot™ Developer Kit
     - My Model: MTUDK2-ST-MDOT
 - Python 3
+    - pyserial
     - requests
+    - numpy
     - matplotlib
 
 ## Build
@@ -32,4 +34,13 @@ pip install pyserial requests
 
 python m.py #main
 # Result will be in the testData/ directory. Make sure you already have this folder before running.
+```
+
+## LAB-4-Data-Analysis/
+
+```
+pip install numpy matplotlib
+
+# PLEASE EXTRACT testData.zip FIRST!
+python main.py
 ```
