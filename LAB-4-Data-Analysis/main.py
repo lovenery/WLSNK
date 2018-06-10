@@ -130,6 +130,29 @@ def draw_lstsq():
     plt.rcParams['axes.unicode_minus'] = False
     plt.show()
 
+def draw_lstsq_single():
+    i = 2
+    j = 8
+    dict_index = '{}_{}'.format(i, j)
+    coordinates = result_dict[dict_index]
+    x_axis_list, y_axis_list = zip(*coordinates)
+
+    # Least squares
+    x = np.array(y_axis_list) # switch
+    y = np.array(x_axis_list) # switch
+    A = np.vstack([x, np.ones(len(x))]).T
+    m, c = np.linalg.lstsq(A, y, rcond=None)[0]
+    plt.plot(x, m*x + c, label=dict_index)
+    plt.plot(x, y, 'o', markersize=2) # scatter
+    print('m={}, c={}'.format(m, c))
+
+    plt.title('Power={}, SF={}. 使用least-squares(最小平方法)之最適直線.'.format(i, j))
+    plt.xlabel('RSSI') # switch
+    plt.ylabel('距離') # switch
+    plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+    plt.rcParams['axes.unicode_minus'] = False
+    plt.show()
+
 def main():
     for testpoint_location_index in range(len(testpoint_locations)): # start from 0
         if testpoint_locations[testpoint_location_index] is None:
@@ -146,8 +169,9 @@ def main():
 
 if __name__ == '__main__':
     main()
-    draw_line_chart()
-    draw_lstsq()
+    # draw_line_chart()
+    # draw_lstsq()
+    draw_lstsq_single()
 
 """
 TEST
