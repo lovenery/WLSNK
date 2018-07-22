@@ -24,7 +24,7 @@ deactivate
 pip freeze > requirements.txt
 ```
 
-## 0326-LAB-2-Data-collect
+## Data-collect/
 
 ```
 pip install pyserial requests
@@ -36,7 +36,7 @@ python m.py #main
 # Result will be in the testData/ directory. Make sure you already have this folder before running.
 ```
 
-## LAB-4-Data-Analysis/
+## Data-Analysis/
 
 ```
 pip install numpy matplotlib
